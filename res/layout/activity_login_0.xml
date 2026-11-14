@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0.0dp" app:cardBackgroundColor="#00ffffff" app:cardCornerRadius="0.0dp" app:cardElevation="0.0dp" app:cardMaxElevation="0.0dp">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_shape_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dp">
+                        <TextView android:textSize="0.0sp" android:textStyle="bold" android:textColor="#ffc1f11d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0.0dp" android:text="𝗦𝗔𝗞𝗧𝗜 𝗕𝗢𝗧 𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟" android:onClick="TelClick" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_shape_1" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0.0dp">
+                        <ImageView android:layout_gravity="center" android:layout_width="0.0dp" android:layout_height="0.0dp" android:src="@drawable/ic_lock_logo" android:onClick="TelClick" />
+                        <TextView android:textSize="0.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1. Klik COPY ID&#xA;2. Kirim ID Mu Ke Admin &#xA;3. Input Username Dan Password&#xA;4. Klik LOGIN VIP ACCOUNT " android:fontFamily="@font/noto_sans_bold" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <Button android:textSize="0.0sp" android:textStyle="bold" android:textColor="#ff000000" android:background="@drawable/bg_ripple_1" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_margin="0.0dp" android:text="Admin 1" android:layout_weight="0.0" android:onClick="TelClick1" android:fontFamily="@font/noto_sans_bold" />
+                            <Button android:textSize="0.0sp" android:textStyle="bold" android:textColor="#ff000000" android:background="@drawable/bg_ripple_1" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_margin="0.0dp" android:text="Admin 2" android:layout_weight="0.0" android:onClick="TelClick2" android:fontFamily="@font/noto_sans_bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/bg_shape_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dp">
+                        <EditText android:textStyle="bold" android:textColor="#ffffffff" android:textColorHint="#ffffffff" android:id="@id/et_username_0" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="0.0dp" android:hint="Input Username" android:drawablePadding="0.0dp" android:layout_weight="0.0" android:inputType="textVisiblePassword" android:drawableStart="@drawable/ic_username" android:fontFamily="@font/noto_sans_bold" />
+                        <Button android:textSize="0.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/btnCopyDeviceId" android:background="@drawable/bg_ripple_1" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_margin="0.0dp" android:text="COPY ID" android:layout_weight="0.0" android:fontFamily="@font/noto_sans_bold" />
+                    </LinearLayout>
+                    <RelativeLayout android:background="@drawable/bg_shape_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/noto_sans_bold">
+                        <EditText android:textStyle="bold" android:textColor="#ffffffff" android:textColorHint="#ffffffff" android:id="@id/et_password_0" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="0.0dp" android:hint="Input Password" android:drawablePadding="0.0dp" android:inputType="textPassword" android:drawableStart="@drawable/ic_password" android:fontFamily="@font/noto_sans_bold" />
+                        <RelativeLayout android:gravity="end|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0.0dp">
+                            <ImageView android:id="@id/btnshowPass" android:background="@drawable/bg_ripple_1" android:padding="0.0dp" android:layout_width="0.0dp" android:layout_height="0.0dp" android:src="@drawable/ic_visibility_off" />
+                            <ImageView android:id="@id/btnhidePass" android:background="@drawable/bg_ripple_1" android:padding="0.0dp" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" android:src="@drawable/ic_visibility_on" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <Button android:textSize="0.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/btn_login_0" android:background="@drawable/bg_ripple_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0.0dp" android:text="LOGIN ACCOUNT VIP" android:fontFamily="@font/noto_sans_bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff042f47" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="0.0sp" android:textColor="#ffeb00" android:layout_gravity="center_horizontal" android:id="@id/dialogTitle" android:paddingBottom="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_title" android:fontFamily="@font/noto_sans_bold" />
+    <TextView android:textSize="0.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/dialogMessage" android:paddingTop="0.0dp" android:paddingBottom="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dialog_message" android:fontFamily="@font/noto_sans_bold" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dp" android:layout_marginBottom="0.0dp">
+        <Button android:textSize="0.0sp" android:textColor="#ffffffff" android:id="@id/btnDownload" android:background="@drawable/btn_background" android:layout_width="0.0dp" android:layout_height="0.0dp" android:minHeight="0.0dp" android:text="@string/download" android:layout_weight="0.0" android:fontFamily="@font/noto_sans_bold" />
+        <Button android:textSize="0.0sp" android:textColor="#ffffffff" android:id="@id/btnCancel" android:background="@drawable/btn_background" android:layout_width="0.0dp" android:layout_height="0.0dp" android:minHeight="0.0dp" android:text="@string/cancel" android:layout_weight="0.0" android:fontFamily="@font/noto_sans_bold" />
+    </LinearLayout>
+</LinearLayout>

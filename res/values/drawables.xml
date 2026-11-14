@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+    <item type="drawable" name="dp" format="string">assets/dp.png</item>
+    <item type="drawable" name="banner" format="string">assets/banner.png</item>
+    <item type="drawable" name="icon" format="string">assets/icon.png</item>
+</resources>

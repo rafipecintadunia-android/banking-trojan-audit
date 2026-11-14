@@ -1,0 +1,1 @@
+libgaruda114.so garudateam.my.id

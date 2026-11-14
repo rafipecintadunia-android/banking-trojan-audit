@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background_style" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="0.0sp" android:textColor="#ffeb00" android:layout_gravity="center_horizontal" android:id="@id/dialogTitle" android:paddingBottom="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_title_reset" android:fontFamily="@font/noto_sans_bold" />
+    <TextView android:textSize="0.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/dialogMessage" android:paddingTop="0.0dp" android:paddingBottom="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/close_app_message" android:fontFamily="@font/noto_sans_bold" />
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dp" android:layout_marginBottom="0.0dp">
+        <Button android:textSize="0.0sp" android:textColor="#ffffffff" android:id="@id/btnDialogOk" android:background="@drawable/btn_background" android:layout_width="wrap_content" android:layout_height="0.0dp" android:minHeight="0.0dp" android:text="@string/exit" android:fontFamily="@font/noto_sans_bold" android:paddingStart="0.0dp" android:paddingEnd="0.0dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/background_style" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="0.0sp" android:textColor="#ffeb00" android:layout_gravity="center_horizontal" android:id="@id/tvTitle" android:paddingBottom="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NOTIFICATION" android:fontFamily="@font/noto_sans_bold" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/helpIcon" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginBottom="0.0dp" android:src="@drawable/ic_splash_logo" />
+        <TextView android:textSize="0.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tvMessage" android:paddingTop="0.0dp" android:paddingBottom="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Isi bantuan..." android:fontFamily="@font/noto_sans_bold" />
+        <CheckBox android:textSize="0.0sp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@id/checkBoxDontShowAgain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0.0dp" android:text="Don't Show Again" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dp" android:layout_marginBottom="0.0dp">
+            <Button android:textSize="0.0sp" android:textColor="#ffffffff" android:id="@id/btnOk" android:background="@drawable/btn_background" android:layout_width="wrap_content" android:layout_height="0.0dp" android:minHeight="0.0dp" android:text="OK" android:fontFamily="@font/noto_sans_bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

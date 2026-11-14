@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_floating" android:padding="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/GarudaIc" android:layout_width="0.0dp" android:layout_height="0.0dp" android:src="@drawable/ic_splash_logo" />
+    <TextView android:textSize="0.0dp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/Garuda" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0.0dp" android:text="Garuda Bot" android:fontFamily="@font/noto_sans_bold" />
+    <TextView android:textSize="0.0dp" android:textStyle="bold" android:textColor="#ffffeb00" android:gravity="center" android:id="@id/view_text_pingnet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dp" android:layout_marginBottom="0.0dp" android:text="GASSS...." android:fontFamily="@font/noto_sans_bold" />
+    <Button android:textSize="0.0dp" android:textStyle="bold" android:gravity="center" android:layout_gravity="bottom" android:id="@id/control_auto_float" android:background="@drawable/bg_button_float" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginTop="0.0dp" android:text="AUTO" android:textAllCaps="true" android:fontFamily="@font/noto_sans_bold" />
+</LinearLayout>

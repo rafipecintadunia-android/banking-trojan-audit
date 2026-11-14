@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/background_style" android:padding="0.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="0.0sp" android:textColor="#ffeb00" android:layout_gravity="center_horizontal" android:id="@id/dialogTitle" android:paddingBottom="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/noto_sans_bold" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp">
+            <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/indicatorContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dp" />
+        <TextView android:textSize="0.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/dialogMessage" android:paddingTop="0.0dp" android:paddingBottom="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/noto_sans_bold" />
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dp" android:layout_marginBottom="0.0dp">
+            <Button android:textSize="0.0sp" android:textColor="#ffffffff" android:id="@id/btnDialogOk" android:background="@drawable/btn_background" android:layout_width="wrap_content" android:layout_height="0.0dp" android:text="@string/ok" android:fontFamily="@font/noto_sans_bold" android:paddingStart="0.0dp" android:paddingEnd="0.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

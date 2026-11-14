@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Buka Aplikasi" />
+    <Button android:id="@id/btn_stop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hentikan Bot" />
+</LinearLayout>

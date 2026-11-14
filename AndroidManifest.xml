@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="garuda.system.assistservice" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.SYSTEM_APPLICATION_OVERLAY"/>
+    <uses-permission android:name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND"/>
+    <uses-permission android:name="android.permission.RUN_IN_BACKGROUND"/>
+    <queries>
+        <package android:name="com.android.settings"/>
+        <package android:name="com.taxi.driver2"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="org.thunderdog.challegram"/>
+        <package android:name="ru.sberbankmobile"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.vkontakte.android"/>
+        <package android:name="com.android.vending"/>
+        <package android:name="com.sec.android.app.samsungapps"/>
+        <package android:name="com.heytap.market"/>
+        <package android:name="com.xiaomi.mipicks"/>
+        <package android:name="com.huawei.appmarket"/>
+        <package android:name="com.amazon.venezia"/>
+        <package android:name="org.mozilla.firefox"/>
+        <package android:name="kz.kkb.homebank"/>
+        <package android:name="com.google.android.apps.maps"/>
+        <package android:name="ru.yandex.yandexmaps"/>
+        <package android:name="ru.yandex.yandexnavi"/>
+        <package android:name="ru.dublgis.dgismobile"/>
+        <package android:name="ru.dublgis.dgismobile4preview"/>
+        <package android:name="com.waze"/>
+        <package android:name="com.navitel"/>
+        <package android:name="com.mapswithme.maps.pro"/>
+        <package android:name="com.huawei.maps.app"/>
+    </queries>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="false" android:extractNativeLibs="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.luoyesiqiu.shell.ProxyApplication" android:resizeableActivity="true" android:roundIcon="@mipmap/ic_launcher" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="false">
+        <activity android:label="@string/app_name" android:name="garuda.system.assistservice.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="garuda.system.assistservice.LockActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="garuda.system.assistservice.NotificationHistoryActivity"/>
+        <service android:exported="false" android:name="garuda.system.assistservice.MyAccessibilityService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/accessibility_service_config"/>
+        </service>
+        <service android:exported="false" android:name="garuda.system.assistservice.FloatingPingService"/>
+        <service android:exported="false" android:name="garuda.system.assistservice.ConnectionBooster" android:permission="android.permission.FOREGROUND_SERVICE"/>
+        <receiver android:enabled="true" android:exported="true" android:name="garuda.system.assistservice.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="0.0sp" android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Backup Cache Jarak" />
+    <TextView android:id="@id/dialog_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Silahkan backup data jarak agar dapat mempercepat proses dan menghemat kuota." />
+    <Button android:id="@id/btn_backup_upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Backup dan Upload ke Google Drive" />
+    <Button android:id="@id/btn_restore_drive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Restore dari Google Drive" />
+    <Button android:id="@id/btn_restore_local" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Restore dari Lokal" />
+    <Button android:id="@id/btn_extra_backup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Backup ke Data Lokal" />
+</LinearLayout>
